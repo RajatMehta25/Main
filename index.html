@@ -15,35 +15,33 @@ flex-direction: column;
           background-image: url("rajat.gif");
           background-repeat: no-repeat;
           background-position: center;
-          width: 100vw;
-    height: 100vh;
+          /* width: 100vw;
+    height: 100vh; */
         }
        
         #myCanvasContainer{
             
-            height: 100%;
-            width: 100%;
+           
             display: flex;
             align-items: center;
             text-align: center;
             flex-direction: column;
-            margin-top: 200px;
             
-        }
+       }  
      a{
        color:white;
      }
-     canvas{
+     /* canvas{
        width: 50vw;
        height: 50vh;
-     }
+     } */
             </style>
 </head>
 <body>
 
 
     <div id="myCanvasContainer">
-        <canvas width="" height="" id="myCanvas" >
+        <canvas width="720" height="560" id="myCanvas" >
          <p>Anything in here will be replaced on browsers that support the canvas element</p>
          <ul>
           <li><a href="https://rajatmehta25.github.io/Reacttvapp/"  style=" color:rgb(250, 76, 76);" >Reacttvapp</a></li>
@@ -52,7 +50,7 @@ flex-direction: column;
           <li><a href="https://rajatmehta25.github.io/chatapp/" style=" color:rgb(253, 105, 209);">Chatapp</a></li>
           <li><a href="https://rajatmehta25.github.io/React_accordion/" style="color:rgb(246, 255, 121);">Accordion</a></li>
           <li><a href="https://rajatmehta25.github.io/RandomImages/" style=" color:rgb(151, 76, 70);">RandomImages</a></li> 
-          <li><a href="https://rajatmehta25.github.io/FaceRecognition/" style=" color:rgb(142, 102, 250);">RandomImages</a></li> 
+          <li><a href="https://rajatmehta25.github.io/FaceRecognition/" style=" color:rgb(160, 127, 250);">FaceRecognition</a></li> 
         </ul>
         </canvas>
        </div>
@@ -63,7 +61,7 @@ flex-direction: column;
         window.onload = function() {
           try {
           
-              TagCanvas.textHeight=20;
+              TagCanvas.textHeight=40;
             TagCanvas.maxBrightness=1;
             TagCanvas.textColour = null;
             TagCanvas.Start('myCanvas');
